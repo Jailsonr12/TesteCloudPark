@@ -1,7 +1,7 @@
 <!-- DataTable Component (DataTable.vue) -->
 <template>
-  <div>
-    <h2>{{ title }}</h2>
+  <div class="table-box">
+    <h2 class="title">{{ title }}</h2>
     <table>
       <thead>
         <tr>
@@ -57,19 +57,46 @@ export default class DataTable extends Vue {
 </script>
 
 <style>
+  .table-box{
+    margin-top: 1.5rem;
+    display: flex;
+    background-color: #f2f2f2;
+    flex-direction: column;
+    border-radius:1rem ;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70rem;
+  }
+  .title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    padding-top: 1rem;
+  }
+  .tible{
+    display: flex;
+    background-color: #f2f2f2;
+    flex-direction: column;
+    border-radius:1rem ;
+    margin-bottom: 2rem;
+  }
   table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+    background-color: white
   }
 
   th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
+    border: 1px solid #c0b3b3;
+    padding: 0.4rem;
     text-align: left;
   }
 
   th {
-    background-color: #f2f2f2;
+    background-color: #ede3e3;
+    text-transform: capitalize;
   }
 </style>
