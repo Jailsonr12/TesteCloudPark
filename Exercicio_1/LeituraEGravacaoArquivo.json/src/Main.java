@@ -1,3 +1,4 @@
+import enums.RunConfiguration;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -16,20 +17,27 @@ public class Main {
 
         int configuration;
 
+        RunConfiguration runConfiguration = RunConfiguration.STOP;
+
         do {
             System.out.println("1 - Read configuration - (Escrever no arquivo)");
             System.out.println("2 - Write configuration - (Ler arquivo)");
             System.out.println("0 - Exit - (Sair)");
-            configuration = scanner.nextInt();
+            runConfiguration = RunConfiguration.toRunConfiguration(scanner.nextInt());
 
-            if (configuration == 1) {
-                Read read = new Read();
-                read.readConfiguration();
-            } else if (configuration == 2) {
-                Write write = new Write();
-                write.writerConfiguration();
+            switch (runConfiguration) {
+                case READ -> {
+                    Read read = new Read();
+                    read.readConfiguration();
+                    break;
+                }
+                case WRITE -> {
+                    Write write = new Write();
+                    write.writerConfiguration();
+                    break;
+                }
             }
 
-        } while (configuration != 0);
+        } while (runConfiguration != RunConfiguration.STOP);
     }
 }
