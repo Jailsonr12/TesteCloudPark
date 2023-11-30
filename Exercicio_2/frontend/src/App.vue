@@ -2,7 +2,7 @@
   <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>|
-    <router-link to="/parking">Estacionamento</router-link>
+    <router-link to="/parking">Parking</router-link>
   </nav>
   <router-view/>
 </template>
