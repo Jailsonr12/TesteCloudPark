@@ -23,7 +23,7 @@ public class Read {
     }
 
     private void setNameServer(JSONObject objetJson) {
-        System.out.print("1 - Informe o nome do servidor:");
+        System.out.print("1 - Informe o nome do servidor: ");
         Scanner scanner = new Scanner(System.in);
         objetJson.put("server_name", scanner.nextLine());
     }
