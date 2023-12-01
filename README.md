@@ -44,3 +44,6 @@ Se escolher a opção **0**, o programa será encerrado.
 > _A tradução correta de **Write configuration** seria **Configuração de gravação** e **Read configuration** seria **Ler configuração.**_
 
 ## Exercicio_2
+
+* O exercicio 2 foi utilizado a linguagem Python, Vue e sqlite
+* Abra na VSCode na __pasta__ chamada `Exercicio_2`
