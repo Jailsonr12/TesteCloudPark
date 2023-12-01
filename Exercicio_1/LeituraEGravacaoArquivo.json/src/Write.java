@@ -17,7 +17,7 @@ public class Write {
             serverConfiguration.setServer_name((String) jsonObject.get("server_name"));
             serverConfiguration.setServer_ip((String) jsonObject.get("server_ip"));
             serverConfiguration.setServer_password((String) jsonObject.get("server_password"));
-            System.out.println(serverConfiguration.toString());
+            System.out.println(serverConfiguration.toString() + "\n");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {

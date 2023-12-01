@@ -14,12 +14,12 @@ public class Read {
 
         try (FileWriter nameFiller = new FileWriter("config.json")) {
             nameFiller.write(objectJson.toJSONString());
-            System.out.println("Salvo com sucesso");
+            System.out.println("\n"+ "Salvo com sucesso");
         } catch (
                 IOException e) {
             throw new RuntimeException(e);
         }
-        System.out.println(objectJson.toJSONString());
+        System.out.println(objectJson.toJSONString() + "\n");
     }
 
     private void setNameServer(JSONObject objetJson) {
