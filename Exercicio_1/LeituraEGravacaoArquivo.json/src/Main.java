@@ -14,9 +14,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        int configuration;
-
+        
         RunConfiguration runConfiguration = RunConfiguration.STOP;
 
         do {
