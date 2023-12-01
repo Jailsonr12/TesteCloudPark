@@ -1,9 +1,11 @@
 package enums;
 
 public enum RunConfiguration {
+
+    STOP(0),
     READ(1),
-    WRITE(2),
-    STOP(0);
+    WRITE(2);
+
 
     private int runNumber;
 

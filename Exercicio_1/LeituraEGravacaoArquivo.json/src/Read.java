@@ -10,24 +10,20 @@ public class Read {
 
     public void readConfiguration() {
 
-        FileWriter nameFiller = null;
-        JSONObject objetJson = new JSONObject();
+        JSONObject objectJson = new JSONObject();
 
-        setNameServer(objetJson);
-        setIPServer(objetJson);
-        setPasswordServer(objetJson);
+        setNameServer(objectJson);
+        setIPServer(objectJson);
+        setPasswordServer(objectJson);
 
-        try {
-            nameFiller = new FileWriter("config.json");
-            nameFiller.write(objetJson.toJSONString());
-            nameFiller.close();
+        try (FileWriter nameFiller = new FileWriter("config.json")) {
+            nameFiller.write(objectJson.toJSONString());
             System.out.println("Salvo com sucesso");
         } catch (
                 IOException e) {
             throw new RuntimeException(e);
         }
-        System.out.println(objetJson.toJSONString());
-
+        System.out.println(objectJson.toJSONString());
     }
 
     private void setNameServer(JSONObject objetJson) {
@@ -39,7 +35,6 @@ public class Read {
     private void setIPServer(JSONObject objetJson) {
         System.out.print("2 - Informe o IP do servidor: ");
         Scanner scanner = new Scanner(System.in);
-
         objetJson.put("server_ip", scanner.nextLine());
     }
 

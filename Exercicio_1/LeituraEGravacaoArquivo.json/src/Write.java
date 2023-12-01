@@ -14,11 +14,9 @@ public class Write {
 
         try {
             JSONObject jsonObject = (JSONObject) parser.parse(new FileReader("config.json"));
-
-            serve.setServe_name((String) jsonObject.get("server_name"));
+            serve.setServer_name((String) jsonObject.get("server_name"));
             serve.setServer_ip((String) jsonObject.get("server_ip"));
             serve.setServer_password((String) jsonObject.get("server_password"));
-
             System.out.println(serve.toString());
         } catch (FileNotFoundException e) {
             e.printStackTrace();
