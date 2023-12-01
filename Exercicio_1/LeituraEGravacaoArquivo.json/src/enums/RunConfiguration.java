@@ -6,7 +6,6 @@ public enum RunConfiguration {
     READ(1),
     WRITE(2);
 
-
     private int runNumber;
 
     RunConfiguration(int runNumber) {

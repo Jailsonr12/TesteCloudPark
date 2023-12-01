@@ -14,7 +14,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        
+
         RunConfiguration runConfiguration = RunConfiguration.STOP;
 
         do {
@@ -37,5 +37,7 @@ public class Main {
             }
 
         } while (runConfiguration != RunConfiguration.STOP);
+
+        scanner.close();
     }
 }

@@ -10,14 +10,14 @@ public class Write {
 
     public void writerConfiguration() {
         JSONParser parser = new JSONParser();
-        Server serve = new Server();
+        ServerConfiguration serverConfiguration = new ServerConfiguration();
 
         try {
             JSONObject jsonObject = (JSONObject) parser.parse(new FileReader("config.json"));
-            serve.setServer_name((String) jsonObject.get("server_name"));
-            serve.setServer_ip((String) jsonObject.get("server_ip"));
-            serve.setServer_password((String) jsonObject.get("server_password"));
-            System.out.println(serve.toString());
+            serverConfiguration.setServer_name((String) jsonObject.get("server_name"));
+            serverConfiguration.setServer_ip((String) jsonObject.get("server_ip"));
+            serverConfiguration.setServer_password((String) jsonObject.get("server_password"));
+            System.out.println(serverConfiguration.toString());
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
