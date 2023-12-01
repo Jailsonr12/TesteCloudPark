@@ -18,7 +18,7 @@
     <DataTable apiUrl="parking/api/v1/customerplan/" title="Table de customer Plan" :columns="['id','due_date', 'customer_id','plan_id']" />
   </div>
   <div>
-    <DataTable apiUrl="parking/api/v1/parkmovement/" title="Table Parkmovement" :columns="['id','entry_date', 'exit_date','vehicle_id','value']" />
+    <DataTable apiUrl="parking/api/v1/parkmovement/" title="Table Park Movement" :columns="['id','entry_date', 'exit_date','vehicle_id','value']" />
   </div>
 </template>
 

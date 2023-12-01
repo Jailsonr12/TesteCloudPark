@@ -6,16 +6,16 @@
     <div class="router-box">
       <div class="router-title">
         <ul>
-          <li><router-link to="/">Home</router-link></li>
-   
-          <li> <router-link to="/parking">All</router-link></li>
-          <li>Customer</li>
-          <li>Plan</li>
-          <li>Vehicle</li>
-          <li>Contract</li>
-          <li>Customer Vehicle</li>
-          <li>Customer Planner</li>
-          <li>Park Movement</li>
+          <li><router-link to="/" class="router-link">Home</router-link></li>
+          <li><router-link to="/register" class="router-link">Register</router-link></li>
+          <li><router-link to="/parking" class="router-link">All Table</router-link></li>
+          <li><router-link to="/customer" class="router-link">Customer</router-link></li>
+          <li><router-link to="/plan" class="router-link">Plan</router-link></li>
+          <li><router-link to="/vehicle" class="router-link">Vehicle</router-link></li>
+          <li><router-link to="/contract" class="router-link">Contract</router-link></li>
+          <li><router-link to="/customer-vehicle" class="router-link">Customer Vehicle</router-link></li>
+          <li><router-link to="/customer-planner" class="router-link">Customer Planner</router-link></li>
+          <li><router-link to="/park-movement" class="router-link">Park Movement</router-link></li>
         </ul>
       </div>
     </div>
@@ -48,14 +48,19 @@ export default {
 .router-title li {
   margin-right: 10px;
   cursor: pointer;
+}
+
+.router-title li .router-link {
+  text-decoration: none;
+  color: white;
   padding: 1rem;
 }
 
-.router-title li:hover {
+.router-title li .router-link:hover {
   text-decoration: underline;
 }
 
-.router-title li:hover:active {
+.router-title li .router-link:hover:active {
   text-decoration: underline;
   background-color: #4e3939;
   border-radius: 1rem;

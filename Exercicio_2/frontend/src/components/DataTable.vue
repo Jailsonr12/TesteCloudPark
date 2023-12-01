@@ -1,4 +1,3 @@
-<!-- DataTable Component (DataTable.vue) -->
 <template>
   <div class="table-box">
     <h2 class="title">{{ title }}</h2>
