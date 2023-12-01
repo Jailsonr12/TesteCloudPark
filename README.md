@@ -45,5 +45,25 @@ Se escolher a opção **0**, o programa será encerrado.
 
 ## Exercicio_2
 
-* O exercicio 2 foi utilizado a linguagem Python, Vue e sqlite
-* Abra na VSCode na __pasta__ chamada `Exercicio_2`
+* No exercício 2, foram utilizadas as linguagens Python, Vue e SQLite.
+* Abra o VSCode na pasta chamada `Exercício_2.`
+
+#### Executar o back-end
+
+1. Abra o terminal e digite o seguinte comando:``.\venv\Scripts\activate``
+2. Instale as dependências com o comando ``pip install -r requirements.txt.``
+3. Através do terminal, entre na pasta backend com o comando ``cd .\backend\``
+4. Execute a migração com o comando ``python manage.py migrate``
+5. Execute o comando makemigrations com ``python manage.py makemigrations``
+6. Agora, basta executar o backend usando o comando ``python manage.py runserver``
+
+##### Servidor de desenvolvedor
+
+Ao entrar no servidor de desenvolvimento, você pode acessar a tela de administração adicionando  `/admin` após a URL. As credenciais de login são: **Username:**  ``jailson``**Password:**``123``
+
+#### Executar o front-end
+
+1. Abra um novo terminal na pasta frontend usando o comando: ``cd .\frontend\``
+2. Instale as dependências do Vue com o comando:``npm install```
+3. Inicie o servidor de desenvolvimento do Vue com o comando:``npm run serve``
+
