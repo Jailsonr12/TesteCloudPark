@@ -5,7 +5,7 @@
 
 * O exercicio 1 foi utilizado a linguagem __Java 21__ 
 * Abra na IDE a __pasta__ chamada `LeituraEGravacaoArquivoJson`
-* Execute a classe chamada `Main` que está dentro do diretório **sr**
+* Execute a classe chamada `Main` que está dentro do diretório **src**
 
 ### Execução do programa
 Ao executar a classe principal, serão exibidas três opções no console:
