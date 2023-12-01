@@ -40,7 +40,7 @@ Server{server_name='Jailson', server_ip='123.123.123', server_password='Jailson'
 ```
 Se escolher a opção **0**, o programa será encerrado.
 
-## Obsercação
+#### Obsercação
 > _A tradução correta de **Write configuration** seria **Configuração de gravação** e **Read configuration** seria **Ler configuração.**_
 
 ## Exercicio_2
