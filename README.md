@@ -2,7 +2,7 @@
 
 ## Exercicio_1
 
-* O exercicio 1 foi utilizado a linguagem Java
+* O exercicio 1 foi utilizado a linguagem __Java__
 * Abra na IDE a __pasta__ chamada `LeituraEGravacaoArquivoJson`
 * Execute a classe chamada `Main` que está dentro do diretório **sr**
 
